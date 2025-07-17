@@ -110,19 +110,19 @@ export default function AnalysisPanel({ code, shouldAnalyze, onAnalyzeComplete }
         </h3>
         <div className='grid grid-cols-2 gap-3'>
           <div className='bg-white rounded-lg p-3 text-center'>
-            <div className='text-2xl font-bold text-gray-800'>{analysis.stats?.lines || 0}</div>
+            <div className='text-2xl font-bold text-gray-800'>{analysis.stats?.total_lines || 0}</div>
             <div className='text-xs text-gray-600'>総行数</div>
           </div>
           <div className='bg-white rounded-lg p-3 text-center'>
-            <div className='text-2xl font-bold text-gray-800'>{analysis.stats?.lines || 0}</div>
+            <div className='text-2xl font-bold text-gray-800'>{analysis.stats?.code_lines || 0}</div>
             <div className='text-xs text-gray-600'>コード行数</div>
           </div>
           <div className='bg-white rounded-lg p-3 text-center'>
-            <div className='text-2xl font-bold text-gray-800'>{analysis.stats?.functions || 0}</div>
+            <div className='text-2xl font-bold text-gray-800'>{analysis.stats?.function_count || 0}</div>
             <div className='text-xs text-gray-600'>関数数</div>
           </div>
           <div className='bg-white rounded-lg p-3 text-center'>
-            <div className='text-2xl font-bold text-gray-800'>{analysis.stats?.classes || 0}</div>
+            <div className='text-2xl font-bold text-gray-800'>{analysis.stats?.class_count || 0}</div>
             <div className='text-xs text-gray-600'>クラス数</div>
           </div>
         </div>

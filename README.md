@@ -12,6 +12,31 @@ Claude の利用規約では、18 歳未満の利用は禁止されています 
 
 <https://www.anthropic.com/legal/consumer-terms>
 
+## デモ
+
+URL: <https://code-analytics.high-school-python.jp/>
+
+```py
+# Python コードをここに入力してください
+x = 10
+
+print(f"x の値: {x}")
+
+for i in range(x):
+    print(i)
+
+if x >= 10:
+    print("x は 2 桁以上です！")
+
+def add(a, b):
+    return a + b
+
+add(1, 2)
+```
+
+![デモ](./docs/images/1.png)
+![デモ](./docs/images/2.png)
+
 ## アーキテクチャ
 
 ```txt

@@ -28,10 +28,12 @@ export interface Improvement {
 }
 
 export interface Stats {
-  lines: number
-  functions: number
-  classes: number
-  complexity: number
+  total_lines: number
+  code_lines: number
+  import_count: number
+  function_count: number
+  class_count: number
+  complexity_score: number
 }
 
 export interface Summary {
