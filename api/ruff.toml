@@ -1,0 +1,32 @@
+line-length = 120
+
+[lint]
+select = ["ALL"]
+
+ignore = [
+  # 実行可能ファイル
+  "EXE",
+  # print の使用
+  "T20",
+  # 行の長さ
+  "E501",
+  # Found commented-out code
+  "ERA001",
+  # pytest で assert を使用した場合のエラー
+  "S101",
+  # Python 3.7 までで型アノテーションを付ける際の Warning
+  "FA102",
+  # 「＿」 を使っている場合
+  "RUF001",
+  "RUF003",
+  # type: ignore を使っている場合
+  "PGH003",
+]
+
+[lint.per-file-ignores]
+# ASTビジターメソッドの命名規則を無視
+"**/analyzer.py" = ["N802"]
+"**/visualizer.py" = ["N802", "C901", "PLR0911"]
+
+[lint.pydocstyle]
+convention = "google"

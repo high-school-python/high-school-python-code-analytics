@@ -1,0 +1,97 @@
+# Git関連
+.git
+.gitignore
+.gitattributes
+
+# Python関連
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# IDE関連
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS関連
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ログとデータ
+*.log
+log/
+data/
+
+# 環境設定と機密情報
+.env
+.env.*
+.env.template
+credential*.json
+*.pem
+*.key
+*.crt
+*.p12
+
+# ドキュメント
+*.md
+!README.md
+docs/
+*.txt
+*.pdf
+
+# テスト関連
+tests/
+test_*.py
+*_test.py
+
+# 開発ツール関連
+.ruff_cache/
+.coverage.*
+coverage.xml
+*.cover
+.hypothesis/
+
+# 一時ファイル
+*.tmp
+*.temp
+temp/
+tmp/
+*.bak
+*.backup
+*.orig
+
+# Cloud Build関連
+cloudbuild.yaml
+
+# Docker関連
+Dockerfile.*
+docker-compose*.yml
+
+# メディアファイル
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.svg
+*.ico
+*.pdf
+*.mp4
+*.avi
+*.mov
